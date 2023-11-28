@@ -1,15 +1,21 @@
 {
   "name": "hello-electron-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "a app sample",
   "main": "main.js",
   "scripts": {
-    "start": "chcp 65001 && electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "chcp 65001 && electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
-  "author": "",
+  "author": "huoranger",
   "license": "ISC",
   "devDependencies": {
+    "@electron-forge/cli": "^7.1.0",
     "electron": "^27.1.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
